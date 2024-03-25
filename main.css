@@ -1,0 +1,157 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Encode Sans "Expanded", sans-serif;
+}
+
+.conteiner {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.conteiner h2 {
+    color: rgb(83, 152, 193);
+    font-weight: bold;
+}
+
+.conteiner nav a  {
+    color: #fff;
+    font-weight: bold;
+}
+header .conteiner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .conteiner li {
+    display: inline;
+    padding: 5px;
+    list-style: none;
+}
+
+header {
+    padding: 16px;
+    border-bottom: 1px solid;
+    margin-bottom: 56px;
+}
+
+header {
+    background-color: rgb(83, 152, 193);
+    padding-top: 16px;
+    color: #fff;
+}
+
+.conteudo {
+    display: grid;
+    grid-template-columns: 70% 30% ;
+}
+
+#sobre-loja{
+    margin-bottom: 56px;
+}
+
+.loja img {
+    max-width: 400px;
+    margin-right: 8px;
+}
+
+.conteudo .loja {
+    display: flex;
+}
+
+.conteudo h2 {
+    margin-bottom: 20px;
+}
+
+.produtos img {
+    max-width: 100%;
+}
+
+.produtos {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    column-gap: 1%;
+}
+
+.produtos h3 {
+    margin-bottom: 10px;
+}
+
+.produtos button {
+    padding: 14px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    display: block;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: italic;
+    cursor: pointer;
+    border-radius: 6px;
+    background-color: rgb(83, 152, 193);
+    color: #fff;
+}
+
+@media screen and (max-width: 640px) {
+    .conteudo {
+        display: block;
+    }
+    .conteiner {
+        max-width: 90%;
+    }
+
+
+
+.conteudo .loja {
+    display: block;
+}
+.conteudo h3 {
+font-size: 1.5em;
+}
+
+.loja img {
+    max-width: 100%;
+}
+
+.produtos {
+    display: block;
+    grid-template-columns: 25% 25% 25% 25%;
+    column-gap: 3%;
+}
+
+.produtos {
+    margin-bottom: 35px;
+}
+
+.produtos img {
+    max-width: 100%;
+}
+
+
+header .conteiner{
+flex-direction: column;
+}
+
+}
+
+
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+    .conteiner {
+        max-width: 90%;
+    }
+
+    .conteudo h3 {
+        font-size: 1.5em;
+        }
+
+    .produtos {
+        grid-template-columns: repeat(2, 49%);
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    
+}
